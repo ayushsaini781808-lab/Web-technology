@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="student.css"?>
+
+<!DOCTYPE students SYSTEM "student.dtd">
+
+<students>
+    <student>
+        <rollno>101</rollno>
+        <name>Dhruv</name>
+        <course>B.Tech</course>
+        <branch>CSE</branch>
+    </student>
+
+    <student>
+        <rollno>102</rollno>
+        <name>Ayush</name>
+        <course>B.Tech</course>
+        <branch>IT</branch>
+    </student>
+
+    <student>
+        <rollno>103</rollno>
+        <name>Deepak</name>
+        <course>BCA</course>
+        <branch>Computer Science</branch>
+    </student>
+</students>
