@@ -1,0 +1,25 @@
+<!ELEMENT ABES_Engineering_College (Students, Faculty)>
+
+<!-- Students -->
+<!ELEMENT Students (Student+)>
+<!ELEMENT Student (RollNo, Name, Course, Branch, Year, Section, Address, Phone, Email)>
+
+<!ELEMENT RollNo (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Course (#PCDATA)>
+<!ELEMENT Branch (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
+<!ELEMENT Section (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+
+<!-- Faculty -->
+<!ELEMENT Faculty (FacultyMember+)>
+<!ELEMENT FacultyMember (FacultyID, Name, Department, Designation, Qualification, Experience, Phone, Email)>
+
+<!ELEMENT FacultyID (#PCDATA)>
+<!ELEMENT Department (#PCDATA)>
+<!ELEMENT Designation (#PCDATA)>
+<!ELEMENT Qualification (#PCDATA)>
+<!ELEMENT Experience (#PCDATA)>

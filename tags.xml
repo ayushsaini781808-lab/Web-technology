@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ABES_Engineering_College SYSTEM "tags.dtd">
+
+<ABES_Engineering_College>
+
+    <Students>
+
+        <Student>
+            <RollNo>2400320100350</RollNo>
+            <Name>Ayush Saini</Name>
+            <Course>B.Tech</Course>
+            <Branch>Computer Science and Engineering</Branch>
+            <Year>3rd</Year>
+            <Section>16</Section>
+            <Address>Saharanpur, Uttar Pradesh</Address>
+            <Phone>7818080863</Phone>
+            <Email>ayushsaini781808@gmail.com</Email>
+        </Student>
+
+        <Student>
+            <RollNo>2400320100308</RollNo>
+            <Name>Ashish Nagar</Name>
+            <Course>B.Tech</Course>
+            <Branch>Computer Science and Engineering</Branch>
+            <Year>3rd</Year>
+            <Section>15</Section>
+            <Address>Ghaziabad, Uttar Pradesh</Address>
+            <Phone>9876501234</Phone>
+            <Email>ashishnagar@abes.ac.in</Email>
+        </Student>
+
+    </Students>
+
+    <Faculty>
+
+        <FacultyMember>
+            <FacultyID>F101</FacultyID>
+            <Name>Dr. Rajesh Sharma</Name>
+            <Department>Computer Science and Engineering</Department>
+            <Designation>Professor</Designation>
+            <Qualification>Ph.D.</Qualification>
+            <Experience>15 Years</Experience>
+            <Phone>9811111111</Phone>
+            <Email>rajesh.sharma@abes.ac.in</Email>
+        </FacultyMember>
+
+        <FacultyMember>
+            <FacultyID>F102</FacultyID>
+            <Name>Dr. Neha Verma</Name>
+            <Department>Information Technology</Department>
+            <Designation>Associate Professor</Designation>
+            <Qualification>Ph.D.</Qualification>
+            <Experience>10 Years</Experience>
+            <Phone>9822222222</Phone>
+            <Email>neha.verma@abes.ac.in</Email>
+        </FacultyMember>
+
+    </Faculty>
+
+</ABES_Engineering_College>
