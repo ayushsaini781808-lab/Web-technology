@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Entry Form</title>
+</head>
+
+<body>
+
+    <div class="sheet">
+        <h1>Student Entry Form</h1>
+
+        <form id="studentForm">
+
+            <div class="row">
+                <label for="student-id">Student ID</label>
+                <input id="student-id" type="text" placeholder="e.g. 2024CS001">
+            </div>
+
+            <div class="row">
+                <label for="student-name">Student Name</label>
+                <input id="student-name" type="text" placeholder="Full name">
+            </div>
+
+            <div class="row">
+                <label for="father-name">Father's Name</label>
+                <input id="father-name" type="text" placeholder="Father's full name">
+            </div>
+
+            <div class="row">
+                <label for="mother-name">Mother's Name</label>
+                <input id="mother-name" type="text" placeholder="Mother's full name">
+            </div>
+
+            <div class="row">
+                <label for="dob">Date of Birth</label>
+                <input id="dob" type="date">
+            </div>
+
+            <div class="row">
+                <label>Gender</label>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="other">
+                        Other
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="mobile">Mobile No.</label>
+                <input id="mobile" type="tel" placeholder="10-digit number">
+            </div>
+
+            <div class="row">
+                <label for="email">Email ID</label>
+                <input id="email" type="email" placeholder="you@example.com">
+            </div>
+
+            <div class="row">
+                <label for="password">Password</label>
+                <input id="password" type="password"
+                    placeholder="Create a strong password">
+            </div>
+
+            <div class="row">
+                <label for="address">Address</label>
+                <textarea id="address"
+                    placeholder="Street, city, state, pincode"></textarea>
+            </div>
+
+            <div class="row">
+                <label for="department">Department</label>
+
+                <select id="department">
+                    <option value="">Select Department</option>
+                    <option>CSE</option>
+                    <option>IT</option>
+                    <option>ECE</option>
+                    <option>EEE</option>
+                    <option>CE</option>
+                    <option>ME</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label for="course">Course</label>
+
+                <select id="course">
+                    <option value="">Select Course</option>
+                    <option>B.Tech</option>
+                    <option>BCA</option>
+                    <option>M.Tech</option>
+                    <option>MCA</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label for="semester">Semester</label>
+
+                <select id="semester">
+                    <option value="">Select Semester</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Hobbies</label>
+
+                <div class="check-group">
+                    <label>
+                        <input type="checkbox" name="hobby">
+                        Reading
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="hobby">
+                        Sports
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="hobby">
+                        Music
+                    </label>
+                </div>
+            </div>
+
+            <div class="row file-row">
+                <label for="photo">Upload Photo</label>
+                <input id="photo" type="file" accept="image/*">
+            </div>
+
+            <div class="actions">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+
+    <script>
+
+        document.getElementById("studentForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            let studentId = document.getElementById("student-id").value.trim();
+            let studentName = document.getElementById("student-name").value.trim();
+            let fatherName = document.getElementById("father-name").value.trim();
+            let motherName = document.getElementById("mother-name").value.trim();
+            let dob = document.getElementById("dob").value;
+            let mobile = document.getElementById("mobile").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value;
+            let address = document.getElementById("address").value.trim();
+            let department = document.getElementById("department").value;
+            let course = document.getElementById("course").value;
+            let semester = document.getElementById("semester").value;
+            let photo = document.getElementById("photo").value;
+
+            let gender = document.querySelector(
+                'input[name="gender"]:checked'
+            );
+
+            let hobbies = document.querySelectorAll(
+                'input[name="hobby"]:checked'
+            );
+ 
+            if (studentId === "") {
+                alert("Please enter Student ID");
+                return;
+            }
+
+             
+            let namePattern = /^[A-Za-z ]+$/;
+
+            if (studentName === "" || !namePattern.test(studentName)) {
+                alert("Please enter a valid Student Name");
+                return;
+            }
+
+            if (fatherName === "" || !namePattern.test(fatherName)) {
+                alert("Please enter a valid Father's Name");
+                return;
+            }
+
+            if (motherName === "" || !namePattern.test(motherName)) {
+                alert("Please enter a valid Mother's Name");
+                return;
+            }
+
+            if (dob === "") {
+                alert("Please select Date of Birth");
+                return;
+            }
+            if (!gender) {
+                alert("Please select Gender");
+                return;
+            }
+
+            let mobilePattern = /^[0-9]{10}$/;
+
+            if (!mobilePattern.test(mobile)) {
+                alert("Please enter a valid 10-digit mobile number");
+                return;
+            }
+
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid Email ID");
+                return;
+            }
+
+            if (password.length < 6) {
+                alert("Password must contain at least 6 characters");
+                return;
+            }
+
+            if (address === "") {
+                alert("Please enter your Address");
+                return;
+            }
+            if (department === "") {
+                alert("Please select Department");
+                return;
+            }
+
+            if (course === "") {
+                alert("Please select Course");
+                return;
+            }
+
+            if (semester === "") {
+                alert("Please select Semester");
+                return;
+            }
+
+            if (hobbies.length === 0) {
+                alert("Please select at least one Hobby");
+                return;
+            }
+            if (photo === "") {
+                alert("Please upload your Photo");
+                return;
+            }
+            alert("Student Form Submitted Successfully!");
+
+            this.submit();
+
+        });
+
+    </script>
+
+</body>
+</html>
