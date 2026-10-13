@@ -1,0 +1,6 @@
+<!ELEMENT students (student+)>
+<!ELEMENT student (rollno, name, course, branch)>
+<!ELEMENT rollno (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT branch (#PCDATA)>

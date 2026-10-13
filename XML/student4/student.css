@@ -1,0 +1,31 @@
+students {
+    display: block;
+    font-family: Arial;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+student {
+    display: block;
+    background-color: white;
+    border: 2px solid black;
+    margin: 15px;
+    padding: 15px;
+}
+rollno, name, course, branch {
+    display: block;
+    margin: 5px;
+}
+rollno {
+    color: blue;
+}
+name {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+course {
+    color: red;
+}
+branch {
+    color: purple;
+}

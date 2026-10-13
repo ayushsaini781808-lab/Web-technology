@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<bookstore>
+
+    <book category="Novel">
+        <title>Train to Pakistan</title>
+        <author>Khushwant Singh</author>
+        <year>1956</year>
+        <price>499</price>
+    </book>
+
+    <book category="Biography">
+        <title>Wings of Fire</title>
+        <author>Dr. A.P.J. Abdul Kalam</author>
+        <year>1999</year>
+        <price>350</price>
+    </book>
+
+    <book category="Programming">
+        <title>Python for Beginners</title>
+        <author>Reema Thareja</author>
+        <year>2023</year>
+        <price>650</price>
+    </book>
+
+    <book category="History">
+        <title>India After Gandhi</title>
+        <author>Ramachandra Guha</author>
+        <year>2007</year>
+        <price>799</price>
+    </book>
+
+    <book category="Science">
+        <title>The Scientific Indian</title>
+        <author>Jayant Narlikar</author>
+        <year>2015</year>
+        <price>550</price>
+    </book>
+
+</bookstore>
